@@ -1,31 +1,71 @@
 .listBox {
-  width: 900px;
+  min-width: 320px;
   margin: auto;
+  background-color: #aeb5be;
+  padding: 5px;
 }
 
 .list {
-  width: 900px;
+  width: 300px;
   list-style: none;
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
 }
 
 .listItem {
-  width: 400px;
-  height: 200px;
+  width: 280px;
+  height: 100px;
   border: 1px solid rgb(0, 0, 0);
   display: flex;
+  flex-direction: row;
   justify-content: space-around;
   align-items: center;
+  flex-wrap: nowrap;
+  background-color: #dbe8f8;
+  padding: 10px;
+  margin-bottom: 5px;
 }
 
 .listItemAvatar {
-  width: 100px;
-  height: 100px;
+  width: 80px;
+  height: 80px;
   border-radius: 100px;
   border: 3px solid rgb(0, 0, 0);
   box-shadow: 0 0 5px rgb(0, 0, 0);
+  margin-right: 20px;
 }
 
 .listItemTitle {
+  font-family: serif;
+  text-transform: uppercase;
+  color: #220c33a1;
+}
+
+@media (min-width: 1215px) {
+  .listBox {
+    width: 1000px;
+  }
+
+  .list {
+    width: 950px;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .listItem {
+    width: 400px;
+    height: 200px;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .listItem:nth-of-type(2n) {
+    margin-left: 10px;
+  }
+
+  .listItemAvatar {
+    width: 120px;
+    height: 120px;
+  }
 }
