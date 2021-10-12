@@ -1,0 +1,31 @@
+.listBox {
+  width: 900px;
+  margin: auto;
+}
+
+.list {
+  width: 900px;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.listItem {
+  width: 400px;
+  height: 200px;
+  border: 1px solid rgb(0, 0, 0);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.listItemAvatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 100px;
+  border: 3px solid rgb(0, 0, 0);
+  box-shadow: 0 0 5px rgb(0, 0, 0);
+}
+
+.listItemTitle {
+}
